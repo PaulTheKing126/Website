@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Games </title>
+  <style>
+.container{
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+}
+.image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: blue;
+}
+.container:hover .overlay{
+  opacity: 1;
+}
+.text{
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p{
+  font-size: 20px;
+}
+button{
+  float: right;
+  border: 3px solid white;
+  background-color: palegreen;
+  color: green;
+  font-size: 30px;
+  padding: 10px 10px;
+}
+
+  </style>
+  </head>
+  <body>
+    <h1> My Favourite Games </h1>
+    <button onclick = "document.location = './index.html'"> Main Menu </button>
+<table>
+<tr>
+<td>
+  <div class = "container">
+   <img src = "brawlstarsimg.jpg" class = "image" >
+   <div class = "overlay">
+     <div class = "text"> Brawl Stars
+     <p> Fast-paced 3v3 multiplayer and battle royale made for mobile! Play with friends or solo across a variety of game modes in under three minutes. </p>
+       </div>
+       </div>
+       </div>
+ </td>
+
+<td>
+<div class = "container">
+ <img src = "robloximg.jpg" class = "image" >
+ <div class = "overlay">
+ <div class = "text"> Roblox
+   <p> Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each other in immersive, user-generated 3D worlds. </p>
+   </div>
+   </div>
+   </div>
+ </td>
+ </tr>
+<tr>
+<td>
+  <div class = "container">
+   <img src = "supermario3dworldimg.jpg" class = "image" >
+   <div class = "overlay">
+   <div class = "text"> Super Mario 3D World
+     </div>
+     </div>
+     </div>
+  </td>
+<td>
+  <div class = "container">
+  <img src = "amongusimg.jpg" class = "image" >
+  <div class = "overlay">
+  <div class = "text"> Among Us
+    </div>
+    </div>
+    </div>
+</td>
+ </tr>
+  </table>
+    </body>
+    </html
